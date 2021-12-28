@@ -50,8 +50,7 @@ function getLowerCaseUserInput() {
         //validate user input
         if (userInput !== "rock" && userInput !== "paper" && userInput !== "scissors") {
             console.log("Incorrect input. Please, try again.");
-        }
-        else {
+        } else {
             return userInput;
         }
     }
@@ -71,8 +70,7 @@ function game() {
 
         if (roundResult.includes("You won")) {
             countPlayerWins++;
-        }
-        else if (roundResult.includes("You lost")) {
+        } else if (roundResult.includes("You lost")) {
             countComputerWins++;
         }
 
