@@ -47,6 +47,7 @@ function getLowerCaseUserInput() {
     while(true) {
         let userInput = prompt("Choose rock, paper or scissors").toLowerCase();
 
+        //validate user input
         if (userInput !== "rock" && userInput !== "paper" && userInput !== "scissors") {
             console.log("Incorrect input. Please, try again.");
         }
@@ -66,16 +67,16 @@ function game() {
         let playerSelection = getLowerCaseUserInput();
         let computerSelection = computerPlay();
 
-        let gameResult = playRound(computerSelection, playerSelection);
+        let roundResult = playRound(computerSelection, playerSelection);
 
-        if (gameResult.includes("You won")) {
+        if (roundResult.includes("You won")) {
             countPlayerWins++;
         }
-        else if (gameResult.includes("You lost")) {
+        else if (roundResult.includes("You lost")) {
             countComputerWins++;
         }
 
-        console.log(gameResult);
+        console.log(roundResult);
         
     }
 
