@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<head>
-    <title>Rock Paper Scissors</title>
-    <meta charset="UTF-8">
-    <script src="./script.js"></script>
-</head>
 <html>
+    <head>
+        <title>Rock, paper, scissors</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+    </head>
     <body>
+        <div class="main">
+            <h1>Rock, paper, scissors game</h1>
+            <h2>Choose your weapon!</h2>
+            <div class="content">
+                <div class="picture-description">
+                    <button id="rock"><img src="./img/rock.png" alt="rock"></button>
+                    <p class="img-description">Rock</p>
+                </div>
+                <div class="picture-description">
+                    <button id="paper"><img src="./img/paper.png" alt="paper"></button>
+                    <p class="img-description">Paper</p>
+                </div>
+                <div class="picture-description">
+                    <button id="scissors"><img src="./img/scissors.png" alt=scissors></button>
+                    <p class="img-description">Scissors</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div id="not-playing">
+                    <div id="game-status">
+                        The game hasn't started yet
+                    </div>
+                    <button id="how-to-play-btn">
+                        Don't know how to play? Click me!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer>Made with love by <a href="https://github.com/twentysixhugs">twentysixhugs</a> :3</footer>
     </body>
 </html>

@@ -1,0 +1,119 @@
+body {
+    background-image: url("./img/background.jpg");
+    background-size: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+    font-family: "Courier New", Courier, monospace, sans-serif, Arial;
+    font-weight: bold;
+}
+
+html {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Courier New", Courier, monospace, sans-serif, Arial;
+    padding-top: 30px;
+}
+
+h2 {
+    font-family: "Courier New", Courier, monospace, sans-serif, Arial;
+}
+
+.content {
+    display: flex;
+    gap: 50px;
+    flex: 2;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    flex: 1;
+    font-family: "Courier New", Courier, monospace, sans-serif, Arial;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+#not-playing {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#game-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+img {
+    width: 200px;
+    height: 140px;
+    transform: rotate(15deg);
+    opacity: 1;
+    transition: all .1s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#rock:active, #paper:active, #scissors:active {
+    transform: scale(1.2) rotate(15deg);
+}
+
+#rock, #paper, #scissors {
+    width: 200px;
+    height: 140px;
+    transform: rotate(15deg);
+    background-color: transparent;
+    transition: all 0.1s ease-in-out;
+    border: none;
+}
+
+#how-to-play-btn {
+    border-radius: 15px;
+    border-style: solid;
+    background-color: rgba(230, 230, 230, 0.479);
+    flex: 1;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    transition: all 0.1s ease-out;
+    font-family: "Courier New", Courier, monospace, sans-serif, Arial;
+    font-weight: bold;
+}
+
+#how-to-play-btn:active {
+    transform: scale(1.07);
+}
+
+.img-description {
+    font-family: "Courier New", Courier, monospace, sans-serif, Arial;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(230, 230, 230, 0.479);
+    padding: 20px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+}
