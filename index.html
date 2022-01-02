@@ -4,11 +4,12 @@
         <title>Rock, paper, scissors</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="main">
             <h1>Rock, paper, scissors game</h1>
-            <h2>Choose your weapon!</h2>
+            <h2 id="ask-weapon">Choose your weapon!</h2>
             <div class="content">
                 <div class="picture-description">
                     <button id="rock"><img src="./img/rock.png" alt="rock"></button>
@@ -28,12 +29,10 @@
                     <div id="game-status">
                         The game hasn't started yet
                     </div>
-                    <button id="how-to-play-btn">
-                        Don't know how to play? Click me!
-                    </button>
-                </div>
+                        <a id="how-to-play-btn" href="https://www.wikihow.com/Play-Rock,-Paper,-Scissors" target="_blank" capture="true">Don't know how to play? Click me!</a>
+                    </div>
             </div>
         </div>
-        <footer>Made with love by <a href="https://github.com/twentysixhugs">twentysixhugs</a> :3</footer>
+        <footer>Made with love by <a id="footer-link" href="https://github.com/twentysixhugs">twentysixhugs</a> :3</footer>
     </body>
 </html>

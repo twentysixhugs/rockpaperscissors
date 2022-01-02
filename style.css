@@ -42,12 +42,18 @@ h2 {
     font-family: "Courier New", Courier, monospace, sans-serif, Arial;
     font-weight: bold;
     flex-direction: column;
+    gap: 20px;
 }
 
 #not-playing {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+#playing {
+    display: flex;
+    flex-direction: column;
 }
 
 #game-status {
@@ -88,20 +94,41 @@ img:hover {
     border: none;
 }
 
-#how-to-play-btn {
+
+#how-to-play-btn, #restart-btn, #start-btn {
     border-radius: 15px;
     border-style: solid;
     background-color: rgba(230, 230, 230, 0.479);
-    flex: 1;
     height: 40px;
     display: flex;
     align-items: center;
     transition: all 0.1s ease-out;
     font-family: "Courier New", Courier, monospace, sans-serif, Arial;
     font-weight: bold;
+    justify-content: center;
 }
 
-#how-to-play-btn:active {
+#how-to-play-btn {
+    border-width: 2px;
+    border-color: rgba(230, 230, 230, 0.479);
+    color: black;
+}
+
+#start-btn {
+    height: 60px;
+    font-size: 24px;
+}
+
+#round-result, #game-result {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+#how-to-play-btn:hover, #restart-btn:hover, #start-btn:hover {
+    transform: scale(1.02);
+}
+
+#how-to-play-btn:active, #restart-btn:active, #start-btn:active {
     transform: scale(1.07);
 }
 
@@ -113,7 +140,11 @@ img:hover {
     padding: 20px;
 }
 
-a:link, a:visited {
+#footer-link:link, #footer-link:visited {
     text-decoration: none;
     color: rgb(114, 114, 114);
+}
+
+a:link, a:visited {
+    text-decoration: none;
 }
